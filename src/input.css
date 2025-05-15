@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-Arimo: "Arimo", sans-serif;
+  --color-Amber: #ffbf00;
+  --color-red: #ff5733;
+  --color-purple: #800080;
+  --color-green: #228b22;
+  --color-cyan: #00ffff;
+  --color-cordovan: #814141;
+  --color-orchid: #da70d6;
+  --color-kellyGreen: #4cbb17;
+  --display-none: "hidden";
+  --color-valspar: #e07f71;
+  --color-teal: #008080;
+  --color-pastel: #a7c7e7;
+  --color-vedigris: #40b5ad;
+}
