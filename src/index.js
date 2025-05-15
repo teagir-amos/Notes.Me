@@ -5,9 +5,12 @@ const save = document.querySelector("#save");
 const cancel = document.querySelector("#cancel");
 const textarea = document.querySelector("#textInput");
 const dotTurquoise = document.querySelector("#dotTurquoise");
+const erase = document.querySelector("#erase");
+const deleteRed = document.querySelector("#eraseRed")
 console.log(noteArea)
 const sampleDelete = document.querySelector("#sampleDelete");
-const sample = document.querySelector("#sample")
+const sample = document.querySelector("#sample");
+const editRed = document.querySelector("#editRed")
 
 searchIcon.addEventListener("click", function () {
     const show = document.getElementById("searchBar");
@@ -42,7 +45,7 @@ function addItem() {
     const dotRed = document.querySelector("#dotRed");
     const textarea = document.querySelector("#textInputRed");
     const essentials = document.querySelector("#essentials");
-    let currentDateRed = document.querySelector("#dateRed");
+    const dateRed = document.querySelector("#dateRed");
     dotRed.addEventListener("click", function () {
         const li = document.createElement("li")
         li.className = `bg-red w-full h-fit rounded-lg p-2`; //adding the class(li) properties
@@ -54,8 +57,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-cordovan justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date();
-        //the date that the user typed the note.
+        date.textContent = new Date().toDateString(); //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -108,12 +110,7 @@ function addItem() {
 
         })
 
-        li.addEventListener("click", function (e) {
-            if (e.target === !(essentials)) {
-                document.getElementById("noteArea").style.display = "initial";
-            }
 
-        })
 
         //Appending the child to the container
         div.appendChild(date);
@@ -141,7 +138,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-orchid justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date();; //the date that the user typed the note.
+        date.textContent = new Date().toDateString(); //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -196,12 +193,7 @@ function addItem() {
 
         })
 
-        li.addEventListener("click", function (e) {
-            if (e.target === !(essentials)) {
-                document.getElementById("noteArea").style.display = "initial";
-            }
 
-        })
 
         //Appending the child to the container
         div.appendChild(date);
@@ -229,7 +221,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-valspar justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date(); //the date that the user typed the note.
+        date.textContent = new Date().toDateString(); //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -282,12 +274,7 @@ function addItem() {
 
         })
 
-        li.addEventListener("click", function (e) {
-            if (e.target === !(essentials)) {
-                document.getElementById("noteArea").style.display = "initial";
-            }
 
-        })
 
         //Appending the child to the container
         div.appendChild(date);
@@ -316,7 +303,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-kellyGreen justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date();; //the date that the user typed the note.
+        date.textContent = new Date().toDateString();; //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -369,12 +356,7 @@ function addItem() {
 
         })
 
-        li.addEventListener("click", function (e) {
-            if (e.target === !(essentials)) {
-                document.getElementById("noteArea").style.display = "initial";
-            }
 
-        })
 
         //Appending the child to the container
         div.appendChild(date);
@@ -402,7 +384,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date();; //the date that the user typed the note.
+        date.textContent = new Date().toDateString();; //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -455,12 +437,6 @@ function addItem() {
 
         })
 
-        li.addEventListener("click", function (e) {
-            if (e.target === !(essentials)) {
-                document.getElementById("noteArea").style.display = "initial";
-            }
-
-        })
 
         //Appending the child to the container
         div.appendChild(date);
@@ -478,14 +454,7 @@ function addItem() {
 
 addItem();
 
-/*let currentDateRed = document.querySelector("#dateRed");
-let thisdate = new Date();
-let date = thisdate.getDate();
-let month = thisdate.getMonth();
-let year = thisdate.getFullYear()
-currentDateRed.innerHTML = (date, month, year);
-console.log(date, month, year);
-console.log(currentDateRed);*/
+
 
 
 
