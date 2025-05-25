@@ -5,8 +5,8 @@
   --font-Arimo: "Arimo", sans-serif;
   --color-Amber: #ffbf00;
   --color-red: #ff5733;
-  --color-purple: #800080;
-  --color-green: #228b22;
+  --color-purple: #cf9fff;
+  --color-green: #50c878;
   --color-cyan: #00ffff;
   --color-cordovan: #814141;
   --color-orchid: #da70d6;
@@ -16,4 +16,9 @@
   --color-teal: #008080;
   --color-pastel: #a7c7e7;
   --color-vedigris: #40b5ad;
+  --color-seashell: #fff5ee;
+  --color-crimson: #dc143c;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --color-pinklight: #ffb6c1;
 }

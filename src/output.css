@@ -32,8 +32,8 @@
     --font-Arimo: "Arimo", sans-serif;
     --color-Amber: #ffbf00;
     --color-red: #ff5733;
-    --color-purple: #800080;
-    --color-green: #228b22;
+    --color-purple: #cf9fff;
+    --color-green: #50c878;
     --color-cyan: #00ffff;
     --color-cordovan: #814141;
     --color-orchid: #da70d6;
@@ -42,6 +42,8 @@
     --color-teal: #008080;
     --color-pastel: #a7c7e7;
     --color-vedigris: #40b5ad;
+    --color-seashell: #fff5ee;
+    --color-crimson: #dc143c;
   }
 }
 @layer base {
@@ -295,10 +297,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-0 {
-    border-style: var(--tw-border-style);
-    border-width: 0px;
-  }
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
@@ -310,6 +308,9 @@
   }
   .bg-cordovan {
     background-color: var(--color-cordovan);
+  }
+  .bg-crimson {
+    background-color: var(--color-crimson);
   }
   .bg-cyan {
     background-color: var(--color-cyan);
@@ -334,6 +335,9 @@
   }
   .bg-red {
     background-color: var(--color-red);
+  }
+  .bg-seashell {
+    background-color: var(--color-seashell);
   }
   .bg-slate-200 {
     background-color: var(--color-slate-200);
@@ -392,6 +396,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
