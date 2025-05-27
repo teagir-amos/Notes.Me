@@ -94,6 +94,37 @@ function addItem() {
         save.addEventListener("click", function () {
             const text = document.getElementById("textInputRed").value;
             console.log(text);
+
+            localStorage.setItem("notes", JSON.stringify(text));
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+
+
+            console.log(notes)
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const ul = document.getElementById("addItem");
+                let notes = JSON.parse(localStorage.getItem("notes"));
+                console.log(notes);
+
+                notes.forEach(note => {
+                    const li = document.createElement("li");
+                    li.className = "bg-cyan w-full h-fit rounded-lg p-2";
+
+                    const p = document.createElement("p");
+                    p.className = "antialiased font-Arimo text-lg pb-10";
+                    p.textContent = note.content;
+
+                    const dateDiv = document.createElement("div");
+                    dateDiv.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
+                    dateDiv.textContent = note.date;
+
+                    li.appendChild(p);
+                    li.appendChild(dateDiv);
+                    ul.appendChild(li);
+                });
+            });
+
             document.getElementById("textInputAmber").style.display = "none"
             document.getElementById("textInputRed").style.display = "initial"
             document.getElementById("textInputPurple").style.display = "none";
@@ -222,6 +253,37 @@ function addItem() {
         save.addEventListener("click", function () {
             const text = document.getElementById("textInputPurple").value;
             console.log(text);
+
+            localStorage.setItem("notes", JSON.stringify(text));
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+
+
+            console.log(notes)
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const ul = document.getElementById("addItem");
+                let notes = JSON.parse(localStorage.getItem("notes"));
+                console.log(notes);
+
+                notes.forEach(note => {
+                    const li = document.createElement("li");
+                    li.className = "bg-cyan w-full h-fit rounded-lg p-2";
+
+                    const p = document.createElement("p");
+                    p.className = "antialiased font-Arimo text-lg pb-10";
+                    p.textContent = note.content;
+
+                    const dateDiv = document.createElement("div");
+                    dateDiv.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
+                    dateDiv.textContent = note.date;
+
+                    li.appendChild(p);
+                    li.appendChild(dateDiv);
+                    ul.appendChild(li);
+                });
+            });
+
             document.getElementById("textInputAmber").style.display = "none"
             document.getElementById("textInputPurple").style.display = "initial"
             document.getElementById("textInputRed").style.display = "none";
@@ -400,6 +462,37 @@ function addItem() {
         save.addEventListener("click", function () {
             const text1 = document.getElementById("textInputAmber").value;
             console.log(text1);
+
+            localStorage.setItem("notes", JSON.stringify(text1));
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+
+
+            console.log(notes)
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const ul = document.getElementById("addItem");
+                let notes = JSON.parse(localStorage.getItem("notes"));
+                console.log(notes);
+
+                notes.forEach(note => {
+                    const li = document.createElement("li");
+                    li.className = "bg-cyan w-full h-fit rounded-lg p-2";
+
+                    const p = document.createElement("p");
+                    p.className = "antialiased font-Arimo text-lg pb-10";
+                    p.textContent = note.content;
+
+                    const dateDiv = document.createElement("div");
+                    dateDiv.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
+                    dateDiv.textContent = note.date;
+
+                    li.appendChild(p);
+                    li.appendChild(dateDiv);
+                    ul.appendChild(li);
+                });
+            });
+
             document.getElementById("textInputRed").style.display = "none"
             document.getElementById("textInputAmber").style.display = "initial"
             document.getElementById("noteArea").style.display = "none";
@@ -482,6 +575,35 @@ function addItem() {
         save.addEventListener("click", function () {
             const text1 = document.getElementById("textInputGreen").value;
             console.log(text1);
+
+            localStorage.setItem("notes", JSON.stringify(text1));
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+            console.log(notes)
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const ul = document.getElementById("addItem");
+                let notes = JSON.parse(localStorage.getItem("notes"));
+                console.log(notes);
+
+                notes.forEach(note => {
+                    const li = document.createElement("li");
+                    li.className = "bg-cyan w-full h-fit rounded-lg p-2";
+
+                    const p = document.createElement("p");
+                    p.className = "antialiased font-Arimo text-lg pb-10";
+                    p.textContent = note.content;
+
+                    const dateDiv = document.createElement("div");
+                    dateDiv.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
+                    dateDiv.textContent = note.date;
+
+                    li.appendChild(p);
+                    li.appendChild(dateDiv);
+                    ul.appendChild(li);
+                });
+            });
+
             document.getElementById("textInputRed").style.display = "none"
             document.getElementById("textInputAmber").style.display = "initial"
             document.getElementById("noteArea").style.display = "none";
@@ -575,7 +697,7 @@ function addItem() {
         div.className = "flex gap-5 justify-end";
         const date = document.createElement("div");
         date.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
-        date.textContent = new Date().toDateString();; //the date that the user typed the note.
+        date.textContent = new Date().toDateString(); //the date that the user typed the note.
         const button = document.createElement("button");
         button.className = "bg-black p-2 rounded-lg";
 
@@ -593,9 +715,6 @@ function addItem() {
             li.remove();
             document.getElementById("textInputTeal").style.display = "none"
 
-
-
-
         });
 
         button.addEventListener("click", function () {
@@ -612,6 +731,39 @@ function addItem() {
         save.addEventListener("click", function () {
             const text1 = document.getElementById("textInputTeal").value;
             console.log(text1);
+
+            localStorage.setItem("notes", JSON.stringify(text1));
+            let notes = JSON.parse(localStorage.getItem("notes")) || [];
+
+
+
+            console.log(notes)
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const ul = document.getElementById("addItem");
+                let notes = JSON.parse(localStorage.getItem("notes"));
+                console.log(notes);
+
+
+
+                notes.forEach(note => {
+                    const li = document.createElement("li");
+                    li.className = "bg-cyan w-full h-fit rounded-lg p-2";
+
+                    const p = document.createElement("p");
+                    p.className = "antialiased font-Arimo text-lg pb-10";
+                    p.textContent = note.content;
+
+                    const dateDiv = document.createElement("div");
+                    dateDiv.className = "flex bg-teal justify-center items-center p-2 rounded-lg text-white";
+                    dateDiv.textContent = note.date;
+
+                    li.appendChild(p);
+                    li.appendChild(dateDiv);
+                    ul.appendChild(li);
+                });
+            });
+
             document.getElementById("textInputRed").style.display = "none"
             document.getElementById("textInputAmber").style.display = "initial"
             document.getElementById("noteArea").style.display = "none";
